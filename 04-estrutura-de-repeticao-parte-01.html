@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Algorithm: Ensino de lógica de programação com JavaScript</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <picture>
+            <source media="(max-width: 670px)" srcset="imagens/original-pq.png" width="483" height="300">
+            <img src="imagens/original.png" alt="Logo do site" width="1349" height="500">
+        </picture>
+    </header>
+    <nav>
+        <a href="index.html">Página Principal</a>
+        <a href="entre-em-contato.html">Entre em contato</a>
+        <a href="sobre.html">Sobre</a>
+    </nav>
+    <main>
+        <article>
+            <h1>
+                04. Estrutura de repetição Parte 01
+            </h1>
+
+            <p>
+                Uma estrututura de repetição permite que o progrmador execute um bloco de código repetidas vezes enquando a condição
+                presente na estrutura seja verdadeira, quando falsa ela quebra o laço de repetição e segue para o próximo bloco de código.
+            </p>
+
+            <p>É importante que na sua estrutura de repetição, a condição presente nela, em algum momento se torne falsa, porque se ela sempre
+                se manter como verdadeira, o seu programa entrará em loop infinito, ocasionando na repetição de uma determinada ação
+                para sempre e isso não gostaríamos que acontecesse.
+            </p>
+
+            <h2>while</h2>
+
+            <p>
+                Na estrutura <strong>while</strong>, temos a condição que enquanto for verdadeira, será executado o que está dentro de seu bloco e só
+                sairá desse bloco, quando a condição for falsa. Segue abaixo um exemplo de programa repetição de compra de um 
+                determinado item.
+            </p>
+
+            <picture>
+                <source media="(max-width: 670px)" srcset="imagens/estrutura-de-repeticao-parte-01/while-pq.png"> 
+                <img src="imagens/estrutura-de-repeticao-parte-01/while-gd.png" alt="Exemplo de laço while">
+                <p><strong>Figura 01:</strong> Exemplo de uma estrutura while.</p>
+            </picture>
+
+            <p>
+                No programa acima temos a repetição de 4 vezes da compra de um item, onde a condição diz que equanto o contador for
+                menor que 4, ele entrará no laço, vai adicionar 1 item na variável que antes era 0 agora virou um e pra variável 
+                contador a mesma coisa, a variável contador que era 0, virou 1 e guarda o valor nela mesma.
+            </p>
+
+            <p>Esse processo será relaizado até a variável contador seja igual a 4, onde nesse caso o 4 não vai ser menor e sim
+                igual, o que faz com que a condição seja falsa e executando o próximo bloco, onde tem a impressão dos items
+                totais que foram armazenados enquanto o laço estava sendo executado.
+            </p>
+
+            <p>No console.log() temos uma mensagem de texto, ou seja, mensagem tipo string, onde junto a ela temos um
+                valor númerico, para realizar a junção de um valor tipo numérico com um valor tipo string, usamos o 
+                sinal de <strong>+</strong> que tem o efeito de concatenação. Resumindo: quando envolve apenas valores
+                numéricos o sinal de adição tem o efeito de <strong>somar</strong> e quando envolve valores tipo string
+                com numéricos o sinal de mais tem o efeito de <strong>concatenar</strong>.
+            </p>
+
+            <h2>do while</h2>
+
+            <p>a estrutura <strong>do while</strong> é um pouco parecida com a estrutura while, só que com um pequeno diferencial:</p>
+            <p>Na estrutura <strong>while</strong>, a condição de continuação do loop é testada em seu início antes do corpo 
+                da estrutura ser executado.</p>
+
+            <p>
+                A estrutura <strong>do while</strong> testa a condição de continuação depois de o corpo do loop ser executado, 
+                portanto ele será executado pelo menos uma vez.
+            </p>
+
+            <picture>
+                <source media="(max-width: 670px)" srcset="imagens/estrutura-de-repeticao-parte-01/do-while-pq.png"> 
+                <img src="imagens/estrutura-de-repeticao-parte-01/do-while-gd.png" alt="Exemplo de laço do while">
+                <p><strong>Figura 02:</strong> Exemplo de uma estrutura do while.</p>
+            </picture>
+
+            <p>O programa acima é semalhente ao anterior, mudando apenas o fato do laço entrar ao menos uma vez
+                para executar o que está em seu bloco e se a condição a ser testada no fim, persisteir em verdadeira
+                o laço é executado novamente, até a condição no fim seja falsa, fazendo-o sair do laço e executando o próximo bloco.
+            </p>
+
+            <p>Para o <strong>do while</strong> vale o mesmo cuidado do <strong>while</strong>, ter uma condição que em algum momento a torne-a falsa
+                para que não ocasione em um loop infinito.
+            </p>
+
+            <br>
+
+            <aside>
+                
+                <h3 style="text-align: center;">O que vamos aprender?</h3>
+
+                <br>
+
+                <ul>
+                    <li><a href="ambiente-de-desenvolvimento-vs-code.html">Ambiente de desenvolvimento VS Code</a></li>
+                    <p> &#x1F4BB; Aprendendo a usar o VS Code</p>
+
+                    <li><a href="01-variaveis.html">01. Variáveis</a></li>
+                    <p> &#x1F4BB; O que são e como declará-las?</p>
+                    <p> &#x1F4BB; Quais são seus tipos?</p>
+                    <p>&#x1F4BB; Primeiro programa</p>
+
+                    <li><a href="02-estruturas-de-controle.html">02. Estruturas de controle</a></li>
+                    <p> &#x1F4BB; Estrutura de controle if</p>
+                    <p>&#x1F4BB; Estrutura de controle if-else</p>
+                    <p>&#x1F4BB; Estrutura de controle else if</p>
+
+                    <li><a href="03-funcoes.html">03. Funções</a></li>
+                    <p> &#x1F4BB; Como criar nossas funções</p>
+
+                    <li><a href="04-estrutura-de-repeticao-parte-01.html">04. Estrutura de repetição Parte 01</a></li>
+                    <p> &#x1F4BB; while</p>
+                    <p> &#x1F4BB; do while</p>
+
+                    <li><a href="05-estrutura-de-repeticao-parte-02.html">05. Estrutura de repetição Parte 02</a></li>
+                    <p> &#x1F4BB; for</p>
+
+                    <li><a href="06-estrutura-de-selecao-multipla.html">06. Estrutura de seleção múltipla</a></li>
+                    <p> &#x1F4BB; switch, break, continue</p>
+
+                    <li><a href="07-arrays.html">07. Arrays</a></li>
+                    <p> &#x1F4BB; Introdução</p>
+                    <p> &#x1F4BB; Inicialização</p>
+                    <p> &#x1F4BB; Array de caracteres</p>
+                    <p> &#x1F4BB; Passando arrays para funções</p>
+
+                    <li><a href="questionario.html">QUESTIONÁRIO</a></li>
+                    
+                </ul>
+            </aside>
+        </article>
+    </main>
+    <footer>
+        <p>Site criado por <a href="https://www.instagram.com/carvalhodiemerson/" target="_blank">Diemenson de Carvalho</a></p>
+    </footer>
+</body>
+</html>

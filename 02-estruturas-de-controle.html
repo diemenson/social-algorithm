@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Algorithm: Ensino de lógica de programação com JavaScript</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <picture>
+            <source media="(max-width: 670px)" srcset="imagens/original-pq.png" width="483" height="300">
+            <img src="imagens/original.png" alt="Logo do site" width="1349" height="500">
+        </picture>
+    </header>
+    <nav>
+        <a href="index.html">Página Principal</a>
+        <a href="entre-em-contato.html">Entre em contato</a>
+        <a href="sobre.html">Sobre</a>
+    </nav>
+    <main>
+        <article>
+            <h1>
+                02. Estruturas de controle
+            </h1>
+
+            <p>
+                Assim como na nossa a vida, nós não seguimos um mesmo rumo todos os dias, podendo existir desvios no caminho que nos
+                 levam a diferentes objetivos, na programação é a mesma coisa, um programa nem sempre irá seguir linhas de códigos 
+                 sequenciais sem desvios e esses desvios nos chamamos de estruturas de controle, abaixo vamos ver algumas estruturas
+                 presentes na programação.
+            </p>
+
+            <h2>Estrutura de controle if</h2>
+
+            <p>
+                A estrutura de controle <strong>if</strong>, permite que um programa tome uma decisão com base em uma detrminada condição, tal
+                condição retorna um valor booleano, como já foi dito anteriormente no assunto de variáveis, possui
+                dois valores, true ou false. Se a condição der true o que tiver entre as chaves do if, será executado, do
+                contrário, não será executada. 
+            </p>
+            
+            <p>O código que fica dentro de um par de chaves, nós chamamos de <strong>bloco</strong>
+                guarde esta informação pois, usaremos esse termo daqui pra frente. Segue abaixo uma representação
+                ilustrativa de um bloco de instrução if.
+            </p> 
+
+            <picture>
+                <source media="(max-width: 670px)" srcset="imagens/estruturas-de-controle/if-pq.png"> 
+                <img src="imagens/estruturas-de-controle/if-gd.png" alt="Exemplo ilustrativo de uma condição if">
+                <p><strong>Figura 01:</strong> Exemplo ilustrativo de uma condição if.</p>
+            </picture>
+
+            <p>As letras verdes presentes no bloco do if, são chamadas de comentários de linhas simples apenas permitem que você explique
+                algum trecho do seu código para que outra pessoa com seu código entenda o que foi feito ali. Abaixo segue um exemplo de programa utilizando
+                if.
+            </p>
+
+            <p>No exemplo abaixo temos uma variável <strong>nota_aluno</strong> que guarda a nota de um determinado aluno com o valor 10, 
+                na codição do if, avaliamos se a nota do aluno é maior (sinal <strong>></strong>, usado na matemática) ou igual a 6,
+                a condição será verdadeira já que 10 é maior que 6, então ela entra no bloco do if e executa o comando
+                dentro dela que é mostrar uma mensagem de aprovado utilizando o cosole.log(), que já foi explicado no
+                capítulo anterior seu funcionamento. Caso fosse falso a condição ela não mostraria nada, já que não tem código
+                algum depois de sua estrutura e é sobre isso que iremos falar na próxima seção.
+            </p>
+
+            <picture>
+                <source media="(max-width: 670px)" srcset="imagens/estruturas-de-controle/if2-pq.png"> 
+                <img src="imagens/estruturas-de-controle/if2-gd.png" alt="Exemplo uma condição if">
+                <p><strong>Figura 02:</strong> Exemplo de uma condição if.</p>
+            </picture>
+
+
+            <h2>Estrutura de controle if-else</h2>
+
+            <p>Enquanto a instrução if executava os códigos presentes em seu bloco, caso a condição fosse verdadeira,
+                quando falsa não fazia nada, mas agora veremos a estrutura <strong>if-else</strong> pra resolver esse problema.
+            </p>
+
+            <p>A estrutura if-else permite que seja tratada a condição caso ela seja verdadeira ou falsa, se ela for
+                verdadeira a instrução dentro do bloco if é executada normalmente, mas caso contrário a instrução dentro do else é
+                que será executada. Vejamos o programa abaixo como exemplo:
+            </p>
+
+            <picture>
+                <source media="(max-width: 670px)" srcset="imagens/estruturas-de-controle/if-else-pq.png"> 
+                <img src="imagens/estruturas-de-controle/if-else-gd.png" alt="Exemplo uma condição if-else">
+                <p><strong>Figura 03:</strong> Exemplo de uma condição if-else.</p>
+            </picture>
+
+            <p>Nesse exemplo acima, a nota do aluno foi alterada para o valor 5, ou seja, quando for verificada
+                na condição se a nota é maior ou igual a 6, será dada como falsa e em vez de cair no if, irá cair
+                no bloco do else, onde mostrará uma mensagem informando que o aluno está reprovado.
+            </p>
+
+            
+            <h2>Estrutura de controle else if</h2>
+
+            <p>Na estrutura else if, utilizamos quando a estrutura de controle possui mais que duas possibilidades
+                de desvio, ainda sim, é avaliado uma condição na estrutura if, caso seja falsa, é avaliada outra condição que 
+                é a estrutura <strong>else if</strong>, se for verdadeira, o código dentro de seu bloco é executado, do contrário cai no bloco do else.
+                Vale resaltar que estruturas de controle podem ter diversos blocos, seguindo essa linha apresentada neste capítulo,
+                mas vamos focar nesses 3, para que não fique tão complexo o entendimento e os exemplos.
+            </p>
+
+            <picture>
+                <source media="(max-width: 670px)" srcset="imagens/estruturas-de-controle/else-if-pq.png"> 
+                <img src="imagens/estruturas-de-controle/else-if-gd.png" alt="Exemplo uma condição else if">
+                <p><strong>Figura 04:</strong> Exemplo de uma condição else if.</p>
+            </picture>
+
+            <p>No caso acima, a nota do aluno é 6, na condição do if, ela é falsa já que 6 não é maior e nem igual
+                a 7, então no bloco seguinte é avaliado outra condição, se a nota do aluno é maior ou igual a 5, no caso
+                ela é maior, torna-se então a condição como verdadeira e entra no bloco else if. Se por ventura a 
+                nota do aluno fosse 4 ou menor, cairia no else, já que um valor abaixo ou igual a 4 não satisfaz nenhuma 
+                das condições acima do else.
+            </p>
+
+            <br>
+
+            <aside>
+                
+                <h3 style="text-align: center;">O que vamos aprender?</h3>
+
+                <br>
+
+                <ul>
+                    <li><a href="ambiente-de-desenvolvimento-vs-code.html">Ambiente de desenvolvimento VS Code</a></li>
+                    <p> &#x1F4BB; Aprendendo a usar o VS Code</p>
+
+                    <li><a href="01-variaveis.html">01. Variáveis</a></li>
+                    <p> &#x1F4BB; O que são e como declará-las?</p>
+                    <p> &#x1F4BB; Quais são seus tipos?</p>
+                    <p>&#x1F4BB; Primeiro programa</p>
+
+                    <li><a href="02-estruturas-de-controle.html">02. Estruturas de controle</a></li>
+                    <p> &#x1F4BB; Estrutura de controle if</p>
+                    <p>&#x1F4BB; Estrutura de controle if-else</p>
+                    <p>&#x1F4BB; Estrutura de controle else if</p>
+
+                    <li><a href="03-funcoes.html">03. Funções</a></li>
+                    <p> &#x1F4BB; Como criar nossas funções</p>
+
+                    <br>
+
+                    <li><a href="04-estrutura-de-repeticao-parte-01.html">04. Estrutura de repetição Parte 01</a></li>
+                    <p> &#x1F4BB; while</p>
+                    <p> &#x1F4BB; do while</p>
+
+                    <li><a href="05-estrutura-de-repeticao-parte-02.html">05. Estrutura de repetição Parte 02</a></li>
+                    <p> &#x1F4BB; for</p>
+
+                    <li><a href="06-estrutura-de-selecao-multipla.html">06. Estrutura de seleção múltipla</a></li>
+                    <p> &#x1F4BB; switch, break, continue</p>
+
+                    <li><a href="07-arrays.html">07. Arrays</a></li>
+                    <p> &#x1F4BB; Introdução</p>
+                    <p> &#x1F4BB; Inicialização</p>
+                    <p> &#x1F4BB; Array de caracteres</p>
+                    <p> &#x1F4BB; Passando arrays para funções</p>
+
+                    <li><a href="questionario.html">QUESTIONÁRIO</a></li>
+                    
+                </ul>
+            </aside>
+        </article>
+    </main>
+    <footer>
+        <p>Site criado por <a href="https://www.instagram.com/carvalhodiemerson/" target="_blank">Diemenson de Carvalho</a></p>
+    </footer>
+</body>
+</html>

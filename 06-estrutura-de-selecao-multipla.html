@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Algorithm: Ensino de lógica de programação com JavaScript</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <picture>
+            <source media="(max-width: 670px)" srcset="imagens/original-pq.png" width="483" height="300">
+            <img src="imagens/original.png" alt="Logo do site" width="1349" height="500">
+        </picture>
+    </header>
+    <nav>
+        <a href="index.html">Página Principal</a>
+        <a href="entre-em-contato.html">Entre em contato</a>
+        <a href="sobre.html">Sobre</a>
+    </nav>
+    <main>
+        <article>
+            <h1>
+                06. Estrutura de seleção múltipla
+            </h1>
+
+            <p>
+                As vezes, um algoritmo pode conter uma série de decisões nas quais uma variável ou
+                expressão é testada separadamente para cada uma das ocasiões que ela pode assumir e com
+                base nisso, diferentes ações são tomadas. Damos o nome a isso de estrutura seleção múltipla
+                e a estrutura que vamos estudar agora é a estrutura switch.
+            </p>
+
+            <h2>switch, break, continue</h2>
+
+            <p>
+                A estrutura switch é composta por <strong>cases</strong> que são os possíveis casos em que a 
+                variável enquanto testada poderá cair em um deles e executar uma determinada ação, também composta
+                por <strong>breaks</strong> que fazem com que o caso depois de executado pare, não permitindo
+                que sejam executado mais casos fora o que caiu antes, em contrapartida tem o <strong>continue</strong> que
+                "salta sobre" as instruções restantes daquela estrutura e realiza a próxima iteração do loop, 
+                e por fim composta por um <strong>default</strong> onde se nenhum caso for satisfeito, o 
+                default será executado.
+            </p>
+
+            <picture>
+                <source media="(max-width: 670px)" srcset="imagens/estrutura-de-selecao-multipla/switch-pq.png"> 
+                <img src="imagens/estrutura-de-selecao-multipla/switch-gd.png" alt="Exemplo de estrutura switch">
+                <p><strong>Figura 01:</strong> Exemplo de uma estrutura switch.</p>
+            </picture>
+
+            <p>Como visto no exemplo de programa acima, a variável <strong>nota_aluno</strong> recebe o valor "C", essa variável é
+                passada dentro da estrutura switch e será verificada através dos cases, qual case ela irá cair e executar o que está
+                dentro do mesmo e parar, para que não continue avaliando, já que o case correspondente ao valor foi encontrado. Caso seja informado
+                uma nota em que não esteja presente em nenhum case, o default é executado.
+            </p> 
+
+            <picture>
+                <source media="(max-width: 670px)" srcset="imagens/estrutura-de-selecao-multipla/default-pq.png"> 
+                <img src="imagens/estrutura-de-selecao-multipla/default-gd.png" alt="Exemplo de estrutura switch quando cai no default">
+                <p><strong>Figura 02:</strong> Exemplo de uma estrutura switch quando cai no default.</p>
+            </picture>
+
+            <p>Com a instrução continue, permite que a próxima instrução dentro da estrutura seja ignorada
+                e passe para a próxima. Segue abaixo um exemplo utilizando o continue.
+            </p>
+
+            <picture>
+                <source media="(max-width: 670px)" srcset="imagens/estrutura-de-selecao-multipla/continue-pq.png"> 
+                <img src="imagens/estrutura-de-selecao-multipla/continue-gd.png" alt="Exemplo de estrutura switch com continue">
+                <p><strong>Figura 03:</strong> Exemplo de uma estrutura switch com continue.</p>
+            </picture>
+
+            <p>No código acima a estrutura for, será executada por 10 vezes, na 5° vez era para o programa
+               imprimir o valor 5 da variável x, já que na 5° vez, seu valor iria ser o 5, mas com o continue ali
+               presente, essa instrução do if junto com o print é ignorada, fazendo com que o programa, continue a imprimir
+               a frase "próxima instrução". E se prestar atenção, nota-se que o ambiente deixou a instrução
+               abaixo do continue, como transparente, sinalizando que aquela instrução não será executada.
+            </p>
+
+            <br>
+
+            <aside>
+                
+                <h3 style="text-align: center;">O que vamos aprender?</h3>
+
+                <br>
+
+                <ul>
+                    <li><a href="ambiente-de-desenvolvimento-vs-code.html">Ambiente de desenvolvimento VS Code</a></li>
+                    <p> &#x1F4BB; Aprendendo a usar o VS Code</p>
+
+                    <li><a href="01-variaveis.html">01. Variáveis</a></li>
+                    <p> &#x1F4BB; O que são e como declará-las?</p>
+                    <p> &#x1F4BB; Quais são seus tipos?</p>
+                    <p>&#x1F4BB; Primeiro programa</p>
+
+                    <li><a href="02-estruturas-de-controle.html">02. Estruturas de controle</a></li>
+                    <p> &#x1F4BB; Estrutura de controle if</p>
+                    <p>&#x1F4BB; Estrutura de controle if-else</p>
+                    <p>&#x1F4BB; Estrutura de controle else if</p>
+
+                    <li><a href="03-funcoes.html">03. Funções</a></li>
+                    <p> &#x1F4BB; Como criar nossas funções</p>
+
+                    <li><a href="04-estrutura-de-repeticao-parte-01.html">04. Estrutura de repetição Parte 01</a></li>
+                    <p> &#x1F4BB; while</p>
+                    <p> &#x1F4BB; do while</p>
+
+                    <li><a href="05-estrutura-de-repeticao-parte-02.html">05. Estrutura de repetição Parte 02</a></li>
+                    <p> &#x1F4BB; for</p>
+
+                    <li><a href="06-estrutura-de-selecao-multipla.html">06. Estrutura de seleção múltipla</a></li>
+                    <p> &#x1F4BB; switch, break, continue</p>
+
+                    <li><a href="07-arrays.html">07. Arrays</a></li>
+                    <p> &#x1F4BB; Introdução</p>
+                    <p> &#x1F4BB; Inicialização</p>
+                    <p> &#x1F4BB; Array de caracteres</p>
+                    <p> &#x1F4BB; Passando arrays para funções</p>
+
+                    <li><a href="questionario.html">QUESTIONÁRIO</a></li>
+                    
+                </ul>
+            </aside>
+        </article>
+    </main>
+    <footer>
+        <p>Site criado por <a href="https://www.instagram.com/carvalhodiemerson/" target="_blank">Diemenson de Carvalho</a></p>
+    </footer>
+</body>
+</html>
