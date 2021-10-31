@@ -50,6 +50,7 @@ nav > a {
     text-decoration: none;
     font-weight: bold;
     transition-duration: 0.5s;
+    text-align: center;
 }
 
 nav > a:hover {
